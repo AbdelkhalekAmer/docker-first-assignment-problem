@@ -1,21 +1,43 @@
-# docker-first-assignment-problem
+# Learn how to write docker file, create images and deploy containers
 
-Learn how to write docker file, create images and deploy containers.
+## node-app
 
-node-app
+build image:
 
-build image: docker build -t nodeapp:latest .
+```powershell
+docker build -t nodeapp:latest .
+```
 
-run container: docker run -p 3000:3000 -d --name nodeapp_latest nodeapp:latest
+run container:
 
-python-app
+```powershell
+docker run -p 3000:3000 -d --name nodeapp_latest nodeapp:latest
+```
 
-build image: docker build -t pythonapp:latest .
+## python-app
 
-run container: docker run -it --name pythonapp_latest pythonapp:latest
+build image:
 
-List all images in your machine
+```powershell
+docker build -t pythonapp:latest .
+```
+
+run container:
+
+```powershell
+docker run -it --name pythonapp_latest pythonapp:latest
+```
+
+## Listing
+
+- All images
+
+```powershell
 docker image ls
+```
 
-List all containers in your machine
+- All containers
+
+```powershell
 docker ps -a
+```
